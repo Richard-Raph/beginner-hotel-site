@@ -1,0 +1,187 @@
+
+*{
+    margin: 0;
+    font-family: cursive;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+body{
+    padding: 8rem 4% 2rem;
+    background: #4298ad;
+}
+
+.logo{
+    font-family: cursive;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 4px;
+    position: fixed;
+    font-family: cursive;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    display: block;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+.logo h1,p{
+    margin-left: 40%;
+}
+ .book button{
+    background: #fff;
+    width: 60px;
+    height: 30px;
+ }
+ .book button a{
+    color: grey;
+ }
+ .book button:hover{
+    transform: none;
+ }
+.body h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.body-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 2rem;
+}
+.body-container .box{
+    background: transparent;
+    text-align: center;
+    border: 2px solid #000;
+    transition: .5s ease;
+    height: 30vh;
+    width: 20%;
+}
+.body-container .box h4{
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.container .box p{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 2rem;
+}
+.container .box{
+    background: transparent;
+    text-align: center;
+    border: 2px solid #000;
+    transition: .5s ease;
+    height: 10vh;
+    width: 20%;
+}
+.custom-select{
+    font-size: 20px;
+    font-weight: 200;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.custom-select select{
+    display: none;
+}
+.select-selected{
+    height: 25px;
+}
+.select-selected:after{
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: transparent transparent transparent;
+}
+.select-selected .select-arrow-active:after{
+    border-color: transparent;
+    top: 7px;
+}
+.select-items div, .select-selected{
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+.select-items{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.select-hide{
+    display: none;
+}
+.btn{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn button{
+    width: 30%;
+    height: 10vh;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 20px;
+    background: #012933;
+    border: 1px solid transparent;
+}
+@media(max-width: 1280px){
+    .logo p{
+        margin-left: 40%;
+    }
+    p{
+        margin-left: 0;
+    }
+}
+@media(max-width: 1024px){
+    body{
+        padding: 5rem 4% 0rem;
+    }
+}
+@media(max-width: 768px){
+    .logo p, .logo h1{
+        margin-left: 30%;
+    }
+    .body-content{
+        margin-top: 20%;
+    }
+    .body-container .box{
+        width: 40%;
+        height: 20vh;
+    }
+    p{
+        margin-left: 0;
+    }
+}
+@media(max-width: 375px){
+    body{
+        padding: 6rem 0% 0rem;
+    }
+    .body-container .box{
+        height: 22vh;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    .logo p, .logo h1{
+        margin-left: 20%;
+    }
+}
